@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maxmi-lab-Weather-App/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/Maxmi-lab-Weather-App/static/js/main.20527d47.chunk.js",
-    "main.js.map": "/Maxmi-lab-Weather-App/static/js/main.20527d47.chunk.js.map",
+    "main.js": "/Maxmi-lab-Weather-App/static/js/main.b0aefe83.chunk.js",
+    "main.js.map": "/Maxmi-lab-Weather-App/static/js/main.b0aefe83.chunk.js.map",
     "runtime-main.js": "/Maxmi-lab-Weather-App/static/js/runtime-main.69d22e3d.js",
     "runtime-main.js.map": "/Maxmi-lab-Weather-App/static/js/runtime-main.69d22e3d.js.map",
     "static/js/2.d59d4ca4.chunk.js": "/Maxmi-lab-Weather-App/static/js/2.d59d4ca4.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.69d22e3d.js",
     "static/js/2.d59d4ca4.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.20527d47.chunk.js"
+    "static/js/main.b0aefe83.chunk.js"
   ]
 }
