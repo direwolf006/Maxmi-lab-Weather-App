@@ -25,27 +25,14 @@ import fetchImage from './fetchImage';
 const useStyles = makeStyles((theme) => ({
     root: {
       minWidth:350,
+      minHeight:250,
       maxWidth: 1000,
-      backgroundColor:'#00695c',
-      color:'#FFFFFF'
+      backgroundColor:"#b3e5fc"
     },
     media: {
-        [theme.breakpoints.down('sm')]: {
-            height:150,
-            width: "100%",
-          },
-          [theme.breakpoints.up('sm')]: {
-            height:150,
-            width: "100%",
-          },
-          [theme.breakpoints.up('md')]: {
-            width: "100%",
-            height:150,
-          },
-          [theme.breakpoints.up('lg')]: {
             height:200,
             width: "100%",
-          },
+          marginBottom:"2%"
     },
   }));
 
@@ -80,29 +67,29 @@ const WeatherCard=({showError})=>{
         <Card className={classes.root} >
         {(editMode)?
             (<div style={{display:'flex',justifyContent:"space-between",margin:"3% 5%"}}>
-                <TextField  label="Enter City" variant="outlined" className={classes.textField}
-                    InputLabelProps={{color:"#FFFFFF"}}
+                <TextField  label="Enter City" variant="outlined" className={classes.textField} color="primary"
+                    InputLabelProps={{color:"#01579b"}}
                     onChange={(event)=>{setCityEntered(event.target.value)}} />
                 <IconButton aria-label="delete"  onClick={()=>setCityWeatherData()} >
-                            <SearchIcon style={{color:'#FFFFFF'}}/>
+                            <SearchIcon color="primary"/>
                 </IconButton>
             </div>)
             :(<div style={{display:'flex',justifyContent:"space-between",margin:"3% 5%"}}>
-                <Typography variant="h5" gutterBottom style={{marginTop:"3%"}}>
+                <Typography variant="h5" gutterBottom style={{marginTop:"3%",color:'#01579b'}}>
                     {cityData.name}
                 </Typography>
                 <IconButton aria-label="delete"  onClick={()=>{setEditMode(!editMode)}} >
-                        <EditIcon style={{color:'#FFFFFF'}}/>
+                        <EditIcon color="primary"/>
                 </IconButton>
                 </div>)
             }
 
         <div style={{backgroundImage:`url(${fetchImage(cityData.id)})`}} className={classes.media} />
 
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h5" gutterBottom style={{color:'#01579b',textAlign:'center'}}>
             {cityData.temperature}
         </Typography>
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h5" gutterBottom style={{color:'#01579b',textAlign:'center'}}>
             {cityData.weather}
         </Typography>
       </Card>
