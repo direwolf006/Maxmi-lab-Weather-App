@@ -66,7 +66,7 @@ const WeatherCard=({showError})=>{
             setCityData({
                 id:data.weather[0].id,
                 name:data.name,
-                temperature:Math.round(data.main.temp),
+                temperature:Math.round(data.main.temp).toString()+" °C",
                 weather:data.weather[0].description
             })
         }else{
